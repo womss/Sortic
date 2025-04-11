@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BillController {
 
     @PostMapping("/getAllBill")
-    public ResponseEntity<String> receiveSum(@RequestBody SumRequest request){
+    public ResponseEntity<String> receiveSum(){
 
         return ResponseEntity.ok("");
     }
