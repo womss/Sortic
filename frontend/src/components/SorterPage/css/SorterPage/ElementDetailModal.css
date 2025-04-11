@@ -1,0 +1,345 @@
+/* 모달 배경 */
+.detail-modal .ant-modal-content {
+    background-color: #555555;
+    color: #303945;
+    padding : 10px;
+
+
+}
+.detail-modal .ant-modal-close-x {
+    transition: color 0.3s; /* 원하는 포인트 컬러 넣어줘 */
+    margin-left : 70px;
+    margin-bottom : 120px;
+    margin-top:-15px;
+    font-size : 35px;
+    display: flex;
+
+
+
+}
+
+.ant-modal-close-x{
+    color : white;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border : 3px solid #CDC9C3;
+    border-radius: 1.5%;
+    padding : 30px 25px;
+
+
+
+}
+
+/* 헤더 (이미지 + 정보) */
+.detail-header-section {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    justify-content: space-between;
+    margin-top : -127px;
+
+
+}
+
+.detail-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.detail-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    border-radius: 10px;
+    margin-left : 10px;
+    background-color: white;
+    box-shadow:
+            0 4px 8px rgba(0, 0, 0, 0.12),
+            0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.detail-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    width: 100%;
+    padding: 6.5px;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+}
+
+.detail-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    width: 100%;
+    padding: 6.5px;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+}
+.detail-price:hover
+{
+    cursor : pointer;
+}
+/* 구분선 */
+.detail-divider {
+    margin: 0;
+}
+
+/* 속성 영역 */
+.detail-attributes {
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+
+    margin-top : -17px;
+    width : 100%;
+    box-shadow:
+            0 4px 8px rgba(0, 0, 0, 0.12),
+            0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+
+.detail-attribute {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+
+}
+
+.detail-attribute:last-child {
+    border-bottom: none;
+}
+
+.attribute-key {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    word-break: break-word;
+    text-align: left;
+   /* 핵심 */
+    padding: 4px 8px;       /* 영역 확보 */
+    border-radius: 6px;     /* 살짝 둥글게 */
+    transition: all 0.25s ease-in-out;
+    width : 50%;
+
+    margin-top : -5px;
+    margin-bottom : -5px;
+    margin-left : 3px;
+}
+
+
+
+.attribute-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    word-break: break-word;
+    text-align: right;
+    /* 핵심 */
+    padding: 4px 8px;       /* 영역 확보 */
+    border-radius: 6px;     /* 살짝 둥글게 */
+    transition: all 0.25s ease-in-out;
+    width : 50%;
+    margin-right : 3px;
+    margin-top : -5px;
+    margin-bottom : -5px;
+}
+
+/* value 부분에만 hover 효과 */
+.attribute-value:hover {
+    background-color:   #4C585B;
+    color : white;
+    cursor: pointer;
+}
+.attribute-key:hover {
+    background-color:   #4C585B;
+    color : white;
+    cursor: pointer;
+}
+
+/* 속성 없을 때 */
+.detail-empty {
+    padding: 20px 0;
+    text-align: center;
+    color: #aaa;
+    font-size: 15px;
+}
+.Element-Detail-Modal-edit-btn{
+
+    color: white;
+}
+.element-detail-complete-btn {
+    background-color: white;
+    color: #303945;
+    border: none;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+
+    margin-top : 15px;
+
+}
+
+.element-detail-complete-btn:hover {
+    background-color: #303945!important;
+    color : white!important;
+    transform: scale(1.05)!important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15)!important;
+}
+.custom-input-key {
+    padding: 2px 8px;
+    height: 20px;
+    line-height: 1.4;
+    width: 50%;
+    margin-right: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    transition: all 0.2s ease;
+    outline: none;
+
+}
+.custom-input-value {
+    padding: 2px 8px;
+    height: 20px;
+    line-height: 1.4;
+    width: 50%;
+    margin-left: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    transition: all 0.2s ease;
+    outline: none;
+
+}
+/* 포커스 효과 */
+.custom-input:focus {
+    border-color: #3b4a4d;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+.custom-input-header-title {
+    padding: 2px 8px;
+    height: 28px;
+    line-height: 1.4;
+    width: 94.5%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    transition: all 0.2s ease;
+    outline: none;
+
+}
+.custom-input-header-price {
+    padding: 2px 8px;
+    height: 28px;
+    line-height: 1.4;
+    width: 94.5%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    transition: all 0.2s ease;
+    outline: none;
+
+}
+/* Placeholder 스타일 */
+.custom-input::placeholder {
+    color: #999;
+    font-size: 0.95rem;
+}
+
+.detail-btn-section{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left : 487px;
+}
+
+.Element-Detail-Modal-edit-btn{
+    margin-left :-1.5px;
+    margin-top : 5px;
+
+}
+
+.Element-Detail-Modal-add-btn{
+
+    color : white;
+    margin-left : -5.5px;
+    margin-top : 8px;
+
+}
+
+.Element-Detail-Modal-add-btn:hover {
+    color: #4C585B;
+
+    transform-origin: center center; /* 여기서도 한 번 더 명시 */
+    text-shadow: 0 0 8px rgba(76, 88, 91, 0.8);
+    cursor: pointer;
+}
+
+.Element-Detail-Modal-edit-btn:hover {
+    color: #4C585B;
+
+    text-shadow: 0 0 8px rgba(76, 88, 91, 0.8);
+    cursor: pointer;
+}
+.custom-input:hover {
+    border-color: #3b4a4d;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    cursor: text;
+}
+.custom-input-header-title:hover {
+    border-color: #3b4a4d;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    cursor: text;
+}
+
+.detail-title:hover {
+    background-color:    #4C585B;
+    color: white;
+    cursor: pointer;
+}
+
+.detail-price:hover{
+
+    background-color:    #4C585B;
+    color: white;
+    cursor: pointer;
+}
+
+
